@@ -1,0 +1,14 @@
+<body>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <title>DJI Fanpage</title>
+
+  <% include ../partials/header %>
+
+  <% Object.keys(articles).forEach(function (id) { %>
+    <article>
+      <h2><%= articles[id].title %></h2>
+      <li><a href='<%= articles[id].link %>'><%= articles[id].title %></a></li>
+    </article>
+  <% }) %>
+</body>
