@@ -14,7 +14,7 @@
   <% Object.keys(articles).forEach(function (id) { %>
     <article>
       <h2><%= articles[id].title %></h2>
-      <li><a href='<%= articles[id].link %>'><%= articles[id].title %></a></li>
+      <p><a href='<%= articles[id].link %>'><%= articles[id].title %></a></p>
     </article>
   <% }) %>
 </body>
